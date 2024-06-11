@@ -1,16 +1,20 @@
-# pos_flutter_project
+# Projeto Flutter
 
-A new Flutter project.
+# Tela de listagem de tarefas
+![ec1](https://github.com/MMartinsR/flutter_pos_project/assets/75630024/da9a6a64-99fa-42bd-b0a0-f073c7b764ee)
 
-## Getting Started
+# Drawer
+![ec3](https://github.com/MMartinsR/flutter_pos_project/assets/75630024/363ad60c-370d-4166-9355-e8dd07657f7d)
 
-This project is a starting point for a Flutter application.
+# Adição
+![ec5](https://github.com/MMartinsR/flutter_pos_project/assets/75630024/b69ee44a-627b-4a0d-b4ab-560d5a68f8a1)
 
-A few resources to get you started if this is your first Flutter project:
+# Edição
+![ec6](https://github.com/MMartinsR/flutter_pos_project/assets/75630024/7beb4b2d-9d9d-42b3-be8c-d2e864adbdbb)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Remoção
+![ec4](https://github.com/MMartinsR/flutter_pos_project/assets/75630024/78370d93-6882-4a8c-8fa1-94dab960ce7b)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Detalhes
+![ec2](https://github.com/MMartinsR/flutter_pos_project/assets/75630024/6559e3b2-5236-47c6-b276-f10a9f154b26)
+
