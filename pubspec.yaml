@@ -38,6 +38,11 @@ dependencies:
   intl: ^0.19.0
   location: ^5.0.0
 
+  pos_flutter_project_pk:
+    git:
+      url: https://github.com/MMartinsR/pos_flutter_project_pk.git
+      ref: master
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -48,6 +53,13 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+# Script para o flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: 'assets/iconp.png'
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
