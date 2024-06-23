@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:pos_flutter_project/providers/auth_provider.dart';
 import 'package:pos_flutter_project/providers/task_provider.dart';
 import 'package:pos_flutter_project/routes.dart';
 import 'package:pos_flutter_project/screens/details_screen.dart';
+import 'package:pos_flutter_project/screens/folder_list_screen.dart';
 import 'package:pos_flutter_project/screens/form_screen.dart';
 import 'package:pos_flutter_project/screens/home_screen.dart';
+import 'package:pos_flutter_project/screens/signin_screen.dart';
+import 'package:pos_flutter_project/screens/signup_picture_screen.dart';
+import 'package:pos_flutter_project/screens/signup_screen.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MainApp());
 }
 
@@ -16,8 +27,11 @@ class MainApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => TaskProvider(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => TaskProvider()),
+        ChangeNotifierProvider(create: (context) => AuthProvider()),
+      ],
       child: MaterialApp(
         title: 'Tarefas',
         debugShowCheckedModeBanner: false,
@@ -27,9 +41,13 @@ class MainApp extends StatelessWidget {
         ),
         routes: {
           // Registrando as possíveis rotas
+          Routes.SIGNIN: (context) => SigninScreen(),
+          Routes.SIGNUP: (context) => SignupScreen(),
+          Routes.SIGNUPPICTURE: (context) => const SignupPictureScreen(),
+          Routes.FOLDERLISTSCREEN: (context) => const FolderListScreen(),
           Routes.HOME: (context) => HomeScreen(),
-          Routes.FORM: (context) => FormScreen(),
-          Routes.DETAIL: (context) => DetailsScreen()
+          Routes.FORM: (context) => const FormScreen(),
+          Routes.DETAIL: (context) => const DetailsScreen()
         },
       ),
     );

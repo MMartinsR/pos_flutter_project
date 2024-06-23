@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "21641553811",
+    "project_id": "autocontrolpanel",
+    "storage_bucket": "autocontrolpanel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21641553811:android:aced0ffc5a17d8fc55aa66",
+        "android_client_info": {
+          "package_name": "br.flutter.pos.martins.pos_flutter_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_IpKTPYjzggQFtguuKfiA7eJrBYJhMEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

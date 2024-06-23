@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pos_flutter_project/models/task.dart';
 import 'package:pos_flutter_project/providers/task_provider.dart';
+import 'package:pos_flutter_project_pk/pos_flutter_project_pk.dart';
 import 'package:provider/provider.dart';
 
 class DetailsScreen extends StatelessWidget {
