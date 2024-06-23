@@ -20,6 +20,7 @@ class SigninScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: TextField(
+                key: const Key('textFieldSigninEmail'),
                 controller: emailController,
                 decoration: const InputDecoration(
                   label: Text("Email"),
@@ -29,6 +30,7 @@ class SigninScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: TextField(
+              key: const Key('textFieldSigninSenha'),
               controller: passwordController,
               decoration: const InputDecoration(label: Text("Senha")),
             ),
